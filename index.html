@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mirage Parfumerie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="Accueil Mirage Parfumerie">
+        <img src="assets/images/mirage-logo.svg" alt="Mirage Parfumerie" class="brand__logo" />
+      </a>
+      <form class="search" role="search" aria-label="Recherche Mirage Parfumerie">
+        <label for="site-search" class="sr-only">Rechercher un parfum ou une collection</label>
+        <input id="site-search" type="search" placeholder="Rechercher un parfum, une collection..." />
+        <button type="submit" aria-label="Lancer la recherche">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.71.71l.27.28v.79l5 5 1.5-1.5-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"></path></svg>
+        </button>
+      </form>
+      <nav class="header-actions" aria-label="Navigation rapide">
+        <a href="#aide" class="action" title="Aide &amp; contact">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm1 15h-2v-2h2zm1.07-7.75-.9.92A1.5 1.5 0 0 0 12 12h-1v-1a3 3 0 0 1 .88-2.12l1.24-1.26a1.5 1.5 0 1 0-2.12-2.12l-.71.7-1.42-1.42.7-.7a3.5 3.5 0 1 1 4.95 4.95z"/></svg>
+        </a>
+        <a href="#localisation" class="action" title="Où nous trouver">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5z"/></svg>
+        </a>
+        <a href="#favoris" class="action" title="Favoris">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35 10.55 20C5.4 15.36 2 12.27 2 8.5A5.5 5.5 0 0 1 7.5 3 5.33 5.33 0 0 1 12 5.09 5.33 5.33 0 0 1 16.5 3 5.5 5.5 0 0 1 22 8.5c0 3.77-3.4 6.86-8.55 11.54z"/></svg>
+        </a>
+        <a href="#compte" class="action" title="Se connecter">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"/></svg>
+        </a>
+        <a href="#panier" class="action" title="Panier">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm10 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm3.84-11.45A1 1 0 0 0 20 6H7.21l-.94-2A1 1 0 0 0 5.39 3H2v2h2.61l3.6 7.59-1.35 2.45A2 2 0 0 0 8.61 17H19v-2H8.61l.1-.18.9-1.65H18a2 2 0 0 0 1.79-1.11l2-4A1 1 0 0 0 20.84 6.55z"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Mise en avant Mirage Parfumerie">
+      <div class="hero__content">
+        <p class="hero__subtitle">Fragrances</p>
+        <h1 class="hero__title">Mirage</h1>
+        <a class="hero__cta" href="#acheter">Acheter</a>
+      </div>
+      <div class="hero__slider" aria-hidden="true">
+        <div class="hero__slides">
+          <article class="hero__slide hero__slide--fragrances active" data-title="Fragrances" data-button="Acheter" data-link="#acheter">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1300&q=80" alt="Parfum Mirage" />
+          </article>
+          <article class="hero__slide hero__slide--history" data-title="Histoire" data-button="Découvrir" data-link="#histoire">
+            <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1300&q=80" alt="Flacon de parfum vintage" />
+          </article>
+          <article class="hero__slide hero__slide--contact" data-title="Contact" data-button="Nous contacter" data-link="#contact">
+            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1300&q=80" alt="Atelier Mirage Parfumerie" />
+          </article>
+        </div>
+        <div class="hero__controls" role="tablist" aria-label="Sections principales">
+          <button class="hero__control active" aria-label="Voir Fragrances" data-index="0"></button>
+          <button class="hero__control" aria-label="Voir Histoire" data-index="1"></button>
+          <button class="hero__control" aria-label="Voir Contact" data-index="2"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
